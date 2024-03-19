@@ -1,12 +1,10 @@
-const User = require('./models/user');
+const User = require('./user');
 const conn = require('./config');
 
 
 conn.sync()
   .then(() => {
-    console.log('Tabelas sincronizadas com sucesso');
-
-
+    console.log('Tabelas sincronizadas com sucesso')
 
   })
   .then(user => {
