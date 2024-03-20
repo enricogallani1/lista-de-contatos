@@ -33,7 +33,7 @@ app.put('/contact', async (req, res, next) => {
         });
         res.status(200).json({ message: "Usuário editado com sucesso!" })
     } catch (err) {
-        res.status(500)
+        res.status(500).send()
     }
 });
 
@@ -46,7 +46,7 @@ app.post('/contact', async (req, res, next) => {
         });
         res.status(200).json({ message: "Usuário criado com sucesso!" })
     } catch (err) {
-        res.status(500)
+        res.status(500).send()
     }
 });
 
